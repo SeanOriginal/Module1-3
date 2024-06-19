@@ -1,0 +1,18 @@
+<!-- jsfunction.html -->
+
+<html>
+    <body>
+        <h2>A Simple Javascript Function</h2>
+        <p id="demo">Hi! Change the color of this!</p>
+        <button onclick="helloWorld()">Say Hello</button>
+
+        <script>
+            document.getElementById("demo").style.color = "purple";
+
+            function helloWorld(){
+                alert('Hello World!')
+                document.getElementById("demo").style.color = "red";
+            }
+        </script>
+    </body>
+</html>
