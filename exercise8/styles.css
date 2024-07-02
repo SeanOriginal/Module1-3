@@ -1,0 +1,49 @@
+/* *{
+    background-color:rgb(224, 216, 216)
+} */
+
+header {
+    background-color:rgb(230, 230, 230);
+    padding:10px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+nav {
+    /* border: 1px solid greenyellow;
+        width: 50%; */
+    background-color: rgb(228, 228, 228);
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    color: black;
+}
+footer {
+    background-color: rgb(230, 230, 230);
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+article button {
+    height: 20px;
+}
+article h1 {
+    color: crimson;
+    font-family: fantasy;
+    height: 25px;
+}
+/* push
+// look up display
