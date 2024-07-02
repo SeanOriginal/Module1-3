@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: lightgray;
+        font-family: sans-serif;
+        font-size: 12pt;
+      }
+      /* body, ul, li {
+            margin: 0;
+        } */
+      header {
+        background: radial-gradient(red, pink);
+        color: white;
+      }
+      nav {
+        position: sticky;
+      }
+      nav ul.menu {
+        list-style: none;
+        padding: 0;
+        display: flex;
+      }
+      nav ul.menu li {
+        padding: 1em;
+      }
+      main {
+        max-width: 80%;
+        margin: 1em auto;
+        background: white;
+      }
+      section#about {
+        border: 1px solid grey;
+        padding: 1em;
+        font-size: 12px;
+      }
+      button {
+        background: rgba(255, 99, 71, 0.7);
+        color: #ffff;
+        font-weight: bold;
+        padding: 0.5em 1em;
+      }
+      #about button {
+        font-size: 18px;
+      }
+      .box {
+        padding: 20px;
+        border: 2px solid black;
+        margin: 40px;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+      }
+
+      .content-box {
+        box-sizing: content-box;
+        background: lightblue;
+      }
+
+      .border-box {
+        box-sizing: border-box;
+        background: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="menu" id="header-nav">
+          <li>Menu Item #1</li>
+          <li>Menu Item #2</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="content">
+      <section id="about">
+        <h1>About &amp;</h1>
+        <ul>
+          <li>bullet point</li>
+        </ul>
+        <button>Click Here</button>
+      </section>
+    </main>
+
+    <section class="content-box box">
+      <p>200px x 200px content box</p>
+      <p>
+        Actual width is 244px = 200px + 2px + 2px (border) + 20px + 20px
+        (padding)
+      </p>
+    </section>
+
+    <section class="border-box box">
+      <p>200px x 200px border box</p>
+      <p>Actual width is 200px (border and padding contribute to total)</p>
+    </section>
+
+    <section style="border: 2px solid black; width: 50px; height: 50px; overflow: auto;">
+      Content is too large for the container
+    </section>
+  </body>
+</html>
